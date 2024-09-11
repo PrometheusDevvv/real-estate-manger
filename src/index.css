@@ -1,8 +1,18 @@
 
+@font-face {
+    font-family: 'FiraGO';
+    src: url('../public/fonts/FiraGO-Book.ttf') format('truetype');
+    font-weight: 500; 
+    font-style: normal;
+}
+*{
+    font-family: 'FiraGO' !important;
+}
 body{
     margin:0;
     padding:0;
     width:1920px;
+    
 }
 .header {
     box-sizing: border-box; 
@@ -69,9 +79,9 @@ body{
 }
 
 .filter-label {
-    font-family: 'FiraGO';
+   
     font-style: normal;
-    font-weight: 500;
+    font-weight: 900;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
@@ -136,7 +146,7 @@ body{
 
 .action-label {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 900;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
