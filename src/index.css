@@ -52,13 +52,21 @@ body{
 }
 
 .filter-item {
+    background:none;
+    border:none;
+    cursor:pointer;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 8px 14px;
     gap: 4px;
+    border-radius:6px;
+    transition:.3s;
 }
 
+.filter-item:hover{
+    background: #F3F3F3;
+}
 
 .filter-label {
     font-family: 'FiraGO';
@@ -90,6 +98,9 @@ body{
 
 
 .action-button {
+    cursor:pointer;
+    background:none;
+    border:none;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;

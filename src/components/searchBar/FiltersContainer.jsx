@@ -13,14 +13,14 @@ const FiltersContainer = () => {
     </div>
 
     <div className="actions-container">
-        <div className="action-button add-listing">
+        <button className="action-button add-listing">
             <div className="action-icon-plus"> <PlusRounded color="white"/> </div>
             <span className="action-label">ლისტინგის დამატება</span>
-        </div>
-        <div className="action-button add-agent">
+        </button>
+        <button className="action-button add-agent">
             <div className="action-icon-plus"> <PlusRounded color="#F93B1D"/> </div>
             <span className="action-label">აგენტის დამატება</span>
-        </div>
+        </button>
     </div>
     
     </div>
