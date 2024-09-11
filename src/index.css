@@ -18,6 +18,12 @@ body{
     background-color: #f9f9f9;
   }
 
+.container{
+    padding-left:162px; 
+    padding-right:162px;
+    padding-top: 77px;
+}
+
 
 
 .filters-container {
@@ -26,11 +32,9 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 0;
-    position: absolute;
     width: 1596px;
     height: 47px;
-    left: 162px;
-    top: 177px;
+    
 }
 
 .filters {
