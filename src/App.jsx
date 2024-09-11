@@ -1,10 +1,11 @@
+import Layout from "./Layouts/Layout"
 
 function App() {
 
   return (
-  <>
-    App
-  </>
+    <Layout>
+      
+    </Layout>
   )
 }
 
