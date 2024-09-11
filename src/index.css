@@ -1,6 +1,8 @@
+
 body{
     margin:0;
     padding:0;
+    width:1920px;
 }
 .header {
     box-sizing: border-box; 
@@ -13,4 +15,112 @@ body{
     height: 100px; 
     background: #FFFFFF; 
     border: 1px solid #DBDBDB; 
+    background-color: #f9f9f9;
   }
+
+
+
+.filters-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    position: absolute;
+    width: 1596px;
+    height: 47px;
+    left: 162px;
+    top: 177px;
+}
+
+.filters {
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 6px;
+    gap: 24px;
+    width: 785px;
+    height: 47px;
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 10px;
+}
+
+.filter-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 14px;
+    gap: 4px;
+}
+
+
+.filter-label {
+    font-family: 'FiraGO';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #021526;
+}
+
+
+.filter-icon {
+    width: 14px;
+    height: 14px;
+}
+
+
+.actions-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 16px;
+    width: 449px;
+    height: 47px;
+}
+
+
+.action-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 2px;
+    height: 47px;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+
+.add-listing {
+    background: #F93B1D;
+    width: 230px;
+}
+
+
+.add-agent {
+    border: 1px solid #F93B1D;
+  
+    color: #F93B1D;
+    width: 203px;
+}
+
+
+.action-icon-plus {
+    width: 22px;
+    height: 22px;
+}
+
+
+.action-label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
