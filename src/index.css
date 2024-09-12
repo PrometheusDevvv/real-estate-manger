@@ -151,3 +151,122 @@ body{
     line-height: 19px;
     text-align: center;
 }
+
+
+/* Region Filter Container*/
+
+/* Region Filter Container */
+.region-filter-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 32px;
+  position: absolute;
+  width: 731px;
+  height: 284px;
+  left: 162px;
+  top: 234px;
+  background: #FFFFFF;
+  border: 1px solid #DBDBDB;
+  box-shadow: 5px 5px 12px rgba(2, 21, 38, 0.08);
+  border-radius: 10px;
+}
+
+/* Filter Section */
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  width: 679px;
+  height: 171px;
+}
+
+/* Region Title */
+.region-title {
+  width: 679px;
+  height: 19px;
+  font-family: 'FiraGO';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  color: #021526;
+}
+
+/* Region Checkbox Container */
+.region-checkbox-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  align-content: flex-start;
+  padding: 0px;
+  gap: 16px 50px;
+  width: 679px;
+  height: 128px;
+}
+
+/* Checkbox Label */
+.checkbox-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  width: 191px;
+  height: 20px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.region-name {
+  width: 163px;
+  height: 17px;
+  font-family: 'FiraGO';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #021526;
+}
+
+
+.region-cta-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 24px;
+  width: 683px;
+  height: 33px;
+}
+
+.region-cta-button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 14px;
+  width: 77px;
+  height: 33px;
+  background: #F93B1D;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-family: 'FiraGO';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+
+
