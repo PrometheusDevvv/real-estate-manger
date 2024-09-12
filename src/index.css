@@ -12,6 +12,7 @@ body{
     margin:0;
     padding:0;
     width:1920px;
+    overflow-x:hidden;
     
 }
 .header {
@@ -267,6 +268,134 @@ body{
   border: none;
   cursor: pointer;
 }
+
+/* Card */
+.card {
+  cursor:pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 384px;
+  height: 455px;
+  filter: drop-shadow(5px 5px 12px rgba(2, 21, 38, 0.08));
+  padding: 0;
+}
+
+/* Image */
+.card .image {
+  width: 100%;
+  height: 307px;
+  background: url('https://i0.wp.com/picjumbo.com/wp-content/uploads/camping-on-top-of-the-mountain-during-sunset-free-photo.jpg?w=600&quality=80');
+  border-radius: 14px 14px 0 0;
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.card .frame-43 {
+  box-sizing:border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 22px 25px;
+  gap: 20px;
+  width: 100%;
+  height: 148px;
+  background: #FFFFFF;
+  border: 0 1px 1px 1px solid #DBDBDB;
+  border-radius: 0 0 14px 14px;
+}
+
+/* Price and Location Details */
+.card .frame-56 {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 334px;
+}
+
+.card .price {
+  font-family: 'FiraGO', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: #021526;
+}
+
+.card .location-details {
+  display: flex;
+  align-items: center;
+  color: rgba(2, 21, 38, 0.7);
+}
+
+/* Details Frame */
+.card .details-frame {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  width: 214px;
+}
+
+
+.card .bed-info, .card .area-info, .card .additional-info {
+  display: flex;
+  align-items: center;
+}
+
+.card .bed-info, .card .area-info {
+  width: fit-content;
+}
+
+.card .bed-icon, .card .area-icon, .card .additional-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.card .bed-count, .card .area-value, .card .additional-value {
+  font-family: 'FiraGO', sans-serif;
+  font-size: 16px;
+  color: rgba(2, 21, 38, 0.7);
+}
+
+.card .area-subvalue {
+  font-size: 10px;
+  color: rgba(2, 21, 38, 0.7);
+  vertical-align: super; 
+}
+
+/* Tag */
+.card .tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 90px;
+  height: 26px;
+  left: 23px;
+  top: 23px;
+  background: rgba(2, 21, 38, 0.5);
+  border-radius: 15px;
+  z-index: 2;
+}
+
+.card .tag-text {
+  font-family: 'FiraGO', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #FFFFFF;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.cards-layout{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  padding-bottom:300px;
+  margin-top:50px;
+}
+
+
 
 
 
