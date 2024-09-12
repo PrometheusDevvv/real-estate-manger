@@ -396,6 +396,97 @@ body{
 }
 
 
+/* The Modal (background) */
+.modal {
+  display: block; /* Display modal when state is true */
+  position: fixed; /* Stay in place */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  z-index: 1;
+  
+}
+
+/* Modal Overlay (blurred background) */
+.modal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  backdrop-filter: blur(4px); /* Apply blur to the background */
+  z-index: -1; /* Place behind the modal content */
+}
+
+/* Modal Content */
+.modal-content {
+  border-radius:10px;
+  box-sizing:border-box;
+  position: relative;
+  z-index: 2; /* Sit on top */
+  background-color: #ffffff;
+  margin: auto;
+  border: 1px solid #feecec;
+  width: 1009px;
+  height:784px;   
+  margin:0 auto;
+  top: calc(50% - 784px/2);
+
+  margin:0 auto;
+  overflow:hidden;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.add-agent-form{
+  box-sizing:border-box;
+  display: flex;
+  padding: 0px;
+  gap: 28px;
+  
+  position: absolute;
+  width: 799px;
+  height: 370px;
+  left: calc(50% - 799px/2);
+  top: 186px;
+
+  background:red;
+  
+}
+
+.add-agent-modal-header{
+  position: absolute;
+width: 294px;
+height: 38px;
+left: calc(50% - 294px/2 + 0.5px);
+top: 87px;
+
+font-family: 'FiraGO';
+font-style: normal;
+font-weight: 900;
+font-size: 32px;
+line-height: 38px;
+margin:0px;
+color: #021526;
+
+}
 
 
 

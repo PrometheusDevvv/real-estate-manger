@@ -22,7 +22,19 @@ export const getRealEstateById = async (id) => {
 
 export const createRealEstate = async (realEstateData) => {
   try {
-    const response = await axiosClient.post('/real-estates', realEstateData);
+    const formData = new FormData();
+
+    // Append each field to the FormData object
+    Object.keys(realEstateData).forEach((key) => {
+      formData.append(key, realEstateData[key]);
+    });
+
+    const response = await axiosClient.post('/real-estates', formData, {
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+    });
+
     return response.data;
   } catch (error) {
     console.error('Error creating real estate:', error);

@@ -1,5 +1,6 @@
 import Card from "./components/Card"
 import CardLayout from "./components/CardLayout"
+import AddAgentModal from "./components/AddAgentModal"
 import FiltersContainer from "./components/searchBar/FiltersContainer"
 import Layout from "./Layouts/Layout"
 
@@ -77,6 +78,8 @@ function App() {
             />
           </CardLayout>
 
+          
+    
     </Layout>
   )
 }
