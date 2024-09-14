@@ -457,9 +457,7 @@ body{
 
 .add-agent-form{
   box-sizing:border-box;
-  display: flex;
   padding: 0px;
-  gap: 28px;
   
   position: absolute;
   width: 799px;
@@ -467,10 +465,12 @@ body{
   left: calc(50% - 799px/2);
   top: 186px;
 
-  background:red;
-  
 }
-
+.agent-form-field{
+  display:flex;
+  gap:28px;
+  margin-bottom:28px;
+}
 .add-agent-modal-header{
   position: absolute;
 width: 294px;
@@ -488,5 +488,48 @@ color: #021526;
 
 }
 
+.agent-form-group{
+  width:384px;
+  box-sizing:border-box;
+  display:flex;
+  gap:5px;
+  flex-direction: column;
 
+}
+.agent-form-label{
+  display:block;
+font-size: 14px;
+font-weight: 900;
+line-height: 16.8px;
+text-align: left;
+
+}
+.agent-form-input{
+  box-sizing:border-box;
+  width: 384px;
+height: 42px;
+padding: 10px;
+gap: 0px;
+border-radius: 6px;
+border: 1px solid #808A93;
+justify: space-between;
+opacity: 0px;
+
+}
+
+.agent-form-file{
+  height: 120px;
+  box-sizing:border-box;
+  width:799px;
+  border: 1px dashed #2D3648;
+  border-radius:6px;
+}
+
+.input-warning{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+  
+}
 

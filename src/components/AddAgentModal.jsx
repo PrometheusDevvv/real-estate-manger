@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PlusRounded from '../assets/icons/PlusRounded';
+import AddAgentForm from './AddAgentForm';
 
 const AddAgentModal = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,9 +23,9 @@ const AddAgentModal = () => {
          
           <div className="modal-content" onClick={e => e.stopPropagation()}>
             <p className="add-agent-modal-header">აგენტის დამატება</p>
-            <div className="add-agent-form">
-s
-            </div>
+           
+                <AddAgentForm/>
+           
 
           </div>
         </div>
