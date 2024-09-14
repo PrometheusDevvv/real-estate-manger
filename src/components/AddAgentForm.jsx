@@ -7,7 +7,7 @@ const AddAgentForm = ({ onSubmit }) => {
         lastName: '',
         email: '',
         phone: '',
-        photo: null
+        avatar: null
     });
 
     // Handle input changes

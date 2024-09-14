@@ -3,6 +3,8 @@ import PlusRounded from '../assets/icons/PlusRounded';
 import AddAgentForm from './AddAgentForm';
 import Button from './Button';
 import axios from 'axios';  // Or use fetch
+import axiosClient from '../services/axiosClient';
+import { createAgent } from '../services/agentService';
 
 const AddAgentModal = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,25 +15,13 @@ const AddAgentModal = () => {
   const handleSubmit = async (formData) => {
     // Prepare form data (for example if you're using multipart/form-data)
     const data = new FormData();
-    data.append('firstName', formData.firstName);
-    data.append('lastName', formData.lastName);
+    data.append('name', formData.firstName);
+    data.append('surname', formData.lastName);
     data.append('email', formData.email);
     data.append('phone', formData.phone);
-    data.append('photo', formData.photo);
-
-    try {
-      // Send POST request with formData
-      const response = await axios.post('YOUR_API_ENDPOINT', data, {
-        headers: {
-          'Content-Type': 'multipart/form-data',  // Set the correct content type if uploading files
-          'Authorization': 'Bearer YOUR_TOKEN'   // Include auth token if needed
-        }
-      });
-      console.log('Agent added:', response.data);
-      closeModal();
-    } catch (error) {
-      console.error('Error adding agent:', error);
-    }
+    data.append('avatar', formData.photo);
+    console.log(data)
+     createAgent(data);
   };
 
   return (
