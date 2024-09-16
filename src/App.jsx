@@ -1,14 +1,14 @@
 import Card from "./components/Card"
 import CardLayout from "./components/CardLayout"
-import AddAgentModal from "./components/AddAgentModal"
 import FiltersContainer from "./components/searchBar/FiltersContainer"
 import Layout from "./Layouts/Layout"
+import CreateButtons from "./components/CreateButtons"
 
 function App() {
   return (
     <Layout>
      <FiltersContainer>
-
+        <CreateButtons/>
      </FiltersContainer>
      
         

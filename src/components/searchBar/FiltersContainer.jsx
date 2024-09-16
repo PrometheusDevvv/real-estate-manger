@@ -1,9 +1,7 @@
 import { useState } from "react";
-import PlusRounded from "../../assets/icons/PlusRounded";
 import FilterItem from "./FilterItem";
-import AddAgentModal from "../AddAgentModal";
 
-const FiltersContainer = () => {
+const FiltersContainer = ({children}) => {
   const [open, setOpen] = useState(null);
 
   return (
@@ -15,14 +13,7 @@ const FiltersContainer = () => {
         <FilterItem id={4} title="საძინებლების რაოდენობა" setOpen={setOpen} open={open} />
       </div>
 
-      <div className="actions-container">
-       
-        <AddAgentModal/>
-        <button className="action-button add-agent">
-          <div className="action-icon-plus"><PlusRounded color="#F93B1D" /></div>
-          <span className="action-label">აგენტის დამატება</span>
-        </button>
-      </div>
+     {children}
     </div>
   );
 };
